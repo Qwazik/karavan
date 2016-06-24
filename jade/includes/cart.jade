@@ -1,0 +1,189 @@
+// breadcumbs ===========================================================
+.main__breadcumbs
+	.container
+		ul.breadcumbs__list
+			li: a(href="/") Интернет-магазин
+			li.active: a(href="/") Доставка и оплата
+// breadcumbs end ========================================================
+
+
+// content area ===========================================================
+.main__content
+	.container
+		.content__right.cart__left
+			.content__header
+				h2 Корзина
+			.cart__item
+				.cart__image
+					img(src="img/pc2.jpg", alt="")
+				.cart__content
+					.cart__cat Ноутбук
+					.cart__name Ноутбук Asus R540SA-XX036T Chocolate Black
+					.cart__art
+						| АРТИКУЛ:
+						span 64508
+					p.cart__time.decorate В наличии на складе
+				.cart__footer
+					p Цена:
+					p.cart__price 2 627 руб
+					p.cart__price-desc
+						span.priceColDesc 1 
+						| x 2627
+					.cart__col#cartCol
+						button.minus -
+						input(type="text" value="1" readonly)
+						button.plus +
+					a.cart__delete(href="#") Удалить
+			.cart__item
+				.cart__image
+					img(src="img/pc3.jpg", alt="")
+				.cart__content
+					.cart__cat Ноутбук
+					.cart__name Ноутбук Asus R540SA-XX036T Chocolate Black
+					.cart__art
+						| АРТИКУЛ:
+						span 64508
+					p.cart__time.decorate.not Нет в наличиии, под заказ
+				.cart__footer
+					p Цена:
+					p.cart__price 2 627 руб
+					p.cart__price-desc
+						span.priceColDesc 1 
+						| x 2627
+					.cart__col#cartCol
+						button.minus -
+						input(type="text" value="1" readonly)
+						button.plus +
+					a.cart__delete(href="#") Удалить
+			.cart__item
+				.cart__image
+					img(src="img/pc2.jpg", alt="")
+				.cart__content
+					.cart__cat Ноутбук
+					.cart__name Ноутбук Asus R540SA-XX036T Chocolate Black
+					.cart__art
+						| АРТИКУЛ:
+						span 64508
+					p.cart__time.decorate В наличии на складе
+				.cart__footer
+					p Цена:
+					p.cart__price 2 627 руб
+					p.cart__price-desc
+						span.priceColDesc 1 
+						| x 2627
+					.cart__col#cartCol
+						button.minus -
+						input(type="text" value="1" readonly)
+						button.plus +
+					a.cart__delete(href="#") Удалить
+			.cart__item
+				.cart__image
+					img(src="img/pc1.jpg", alt="")
+				.cart__content
+					.cart__cat Ноутбук
+					.cart__name Ноутбук Asus R540SA-XX036T Chocolate Black
+					.cart__art
+						| АРТИКУЛ:
+						span 64508
+					p.cart__time.decorate В наличии на складе
+				.cart__footer
+					p Цена:
+					p.cart__price 2 627 руб
+					p.cart__price-desc
+						span.priceColDesc 1 
+						| x 2627
+					.cart__col#cartCol
+						button.minus -
+						input(type="text" value="1" readonly)
+						button.plus +
+					a.cart__delete(href="#") Удалить															
+		.content__left.cart__right
+			h2 Оформить заказ
+			p.header__desc Способ получения заказа
+			.checkbox__group
+				.checkbox__row
+					label.sum__checkbox
+						input(type="checkbox", name="")
+						span Забрать самому
+					span.tip
+						.tip__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolorum.
+					span.delivery__type-price 0 руб
+				.checkbox__row
+					label.sum__checkbox
+						input(type="checkbox", name="")
+						span Курьерская доставка
+					span.tip
+						.tip__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, culpa?
+					span.delivery__type-price 500 руб
+				.checkbox__row
+					label.sum__checkbox
+						input(type="checkbox", name="")
+						span Срочная доставка (VIP)
+					span.tip
+						.tip__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, magni.
+					span.delivery__type-price 2000 руб
+			.final__sum
+				p.header__desc Итого:
+				.sum__block
+					.sum__row.clearfix
+						span.sum__name Стоимость:
+						span.sum__val
+							span.num 0
+							| руб.
+					.sum__row.clearfix
+						span.sum__name Доставка до точки выдачи:
+						span.sum__val
+							span.num 0
+							| руб.	
+					.sum__row.end.clearfix
+						span.sum__name Всего к оплате:
+						span.sum__val
+							span.num 0
+							| руб.			
+			input(type="submit" value="Оформить заказ").buy-btn
+	// content area end ========================================================
+	.container
+		.catalog__recently
+			h2 С этим товаром покупают
+			.recently__gal
+				ul.tovars__category#carouselWidth
+					li.tovars__item.new
+							a.header(href="#")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+					li.tovars__item.hit
+							a.header(href="#")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+					li.tovars__item
+						a.header(href="#")
+							img(src="img/pc1.jpg", alt="")
+						.content
+							a.title(href="#") Кофеварка
+							a.mark(href="#") Nespresso krups
+						.footer.hit
+							a(href="#").buy-btn Купить
+							.price 2 753
+								span руб
+					li.tovars__item.hit
+						a.header(href="#")
+							img(src="img/pc1.jpg", alt="")
+						.content
+							a.title(href="#") Кофеварка
+							a.mark(href="#") Nespresso krups
+						.footer
+							a(href="#").buy-btn Купить
+							.price 2 753
+								span руб

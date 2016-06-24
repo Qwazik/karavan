@@ -1,0 +1,757 @@
+<!DOCTYPE html><!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru">
+<![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 lt-ie8" lang="ru">
+<![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9" lang="ru">
+<![endif]-->
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Start</title>
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700">
+    <link rel="stylesheet" href="/fonts/proximaNova/fonts.css">
+    <!-- LIBS STYLES ======================================================================		-->
+    <link rel="stylesheet" href="libs/normalize-css/normalize.css">
+    <link rel="stylesheet" href="libs/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+    <!-- CUSTOM STYLES ====================================================================-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="libs/modernizr-min/modernizr.min.js"></script>
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+  </head>
+  <body><!--[if lt IE 9]>
+    <script src="libs/selectivizr/selectivizr.js"></script>
+    <script src="libs/respond/dest/respond.min.js"></script><![endif]-->
+    <!--[if lt IE 8]>
+    <p class="browserupgrade"></p>Ваш браузер  <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для корректного отображения сайтов.
+    <![endif]-->
+    <div class="main__wrap">
+      <!-- header ===============================-->
+      <header class="main__header">
+        <div class="header__top clearfix">
+          <div class="container">
+            <div class="main__menu">
+              <ul class="menu">
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="delivery.html">Доставка и оплата</a></li>
+                <li><a href="discount.html" class="discount">Акции</a></li>
+                <li><a href="vivoz.html">Самовывоз</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="user__block"><a href="#" class="auth"><span class="ico"> </span>Вход</a><a href="cart.html" class="cart"><span class="ico"> </span>Корзина</a></div>
+          </div>
+        </div>
+        <div class="header__center">
+          <div class="container"><a href="index.html" class="logo"><img src="img/logo.png" alt="">
+              <p class="logo__desc">Интернет магазин бытовой техники и электроники</p></a>
+            <div class="header__phones">
+              <p class="big-tel"><span>+7 (800)</span> 001-23-15</p>
+              <p class="big-tel"><span>+7 (800)</span> 001-23-15</p>
+              <p class="graph"><span class="title">Время-работы:</span><span class="val">c 10:00 до 19:00 <span>ежедневно</span></span></p>
+            </div>
+            <div class="search">
+              <form>
+                <input type="text" placeholder="Поиск">
+                <input type="submit" value="" class="magnific">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="header__menu-teh">
+          <div class="container">
+            <div class="menu-teh">
+              <ul class="menu">
+                <li><a href="s-home" class="clearfix">
+                    <div class="ico"></div>
+                    <div class="text"> Для<br/>дома</div></a></li>
+                <li><a href="s-kuhna" class="clearfix"> 
+                    <div class="ico"></div>
+                    <div class="text">Для кухни</div></a></li>
+                <li><a href="s-zdor" class="clearfix"> 
+                    <div class="ico"></div>
+                    <div class="text">Красота и здоровье</div></a></li>
+                <li><a href="s-clim" class="clearfix"> 
+                    <div class="ico"></div>
+                    <div class="text">Климат</div></a></li>
+                <li><a href="s-bit" class="clearfix"> 
+                    <div class="ico"></div>
+                    <div class="text">Бытовая техника</div></a></li>
+                <li><a href="s-vstr" class="clearfix"> 
+                    <div class="ico"></div>
+                    <div class="text">Встраиваемая техника</div></a></li>
+                <li><a href="s-afv" class="clearfix"> 
+                    <div class="ico"></div>
+                    <div class="text">Аудио Фото Видео</div></a></li>
+                <li><a href="s-cifr" class="clearfix"> 
+                    <div class="ico"></div>
+                    <div class="text">Цифровая техника</div></a></li>
+                <li><a href="s-ucen" class="clearfix"> 
+                    <div class="ico"></div>
+                    <div class="text">Уцененный товар</div></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="submenu-teh">
+                      <div id="s-home" class="submenu__item clearfix">
+                        <div class="container">
+                          <div class="submenu__content">
+                            <div class="submenu-section"><strong class="submenu-section__title">Домашняя техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="submenu__image"><img src="img/submenu-kuhna.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div id="s-kuhna" class="submenu__item clearfix">
+                        <div class="container">
+                          <div class="submenu__content">
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="submenu__image"><img src="img/submenu-kuhna.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div id="s-zdor" class="submenu__item clearfix">
+                        <div class="container">
+                          <div class="submenu__content">
+                            <div class="submenu-section"><strong class="submenu-section__title">Здоровье техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="submenu__image"><img src="img/submenu-kuhna.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div id="s-clim" class="submenu__item clearfix">
+                        <div class="container">
+                          <div class="submenu__content">
+                            <div class="submenu-section"><strong class="submenu-section__title">Климат техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="submenu__image"><img src="img/submenu-kuhna.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div id="s-bit" class="submenu__item clearfix">
+                        <div class="container">
+                          <div class="submenu__content">
+                            <div class="submenu-section"><strong class="submenu-section__title">Бытовая техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="submenu__image"><img src="img/submenu-kuhna.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div id="s-vstr" class="submenu__item clearfix">
+                        <div class="container">
+                          <div class="submenu__content">
+                            <div class="submenu-section"><strong class="submenu-section__title">Встраиваемая техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="submenu__image"><img src="img/submenu-kuhna.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div id="s-afv" class="submenu__item clearfix">
+                        <div class="container">
+                          <div class="submenu__content">
+                            <div class="submenu-section"><strong class="submenu-section__title">Аудио техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="submenu__image"><img src="img/submenu-kuhna.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div id="s-cifr" class="submenu__item clearfix">
+                        <div class="container">
+                          <div class="submenu__content">
+                            <div class="submenu-section"><strong class="submenu-section__title">Цифровая техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="submenu__image"><img src="img/submenu-kuhna.png" alt=""></div>
+                        </div>
+                      </div>
+                      <div id="s-ucen" class="submenu__item clearfix">
+                        <div class="container">
+                          <div class="submenu__content">
+                            <div class="submenu-section"><strong class="submenu-section__title">Уцененный товар</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Кухонная техника</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Мультиварки</a></li>
+                                <li><a href="#">Аксессуары для мультиварок</a></li>
+                                <li><a href="#">Соковыжималки</a></li>
+                                <li><a href="#">Тостеры и сэндвичницы</a></li>
+                                <li><a href="#">Пароварки</a></li>
+                                <li><a href="#">Хлебопечи</a></li>
+                                <li><a href="#">Блендеры и миксеры</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                            <div class="submenu-section"><strong class="submenu-section__title">Сервировка</strong>
+                              <ul class="submenu-section__list">
+                                <li><a href="#">Чашки</a></li>
+                                <li><a href="#">Столовые приборы</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="submenu__image"><img src="img/submenu-kuhna.png" alt=""></div>
+                        </div>
+                      </div>
+          </div>
+        </div>
+      </header>
+      <!--header end ===============================-->
+      <!-- breadcumbs ===========================================================-->
+      <div class="main__breadcumbs">
+        <div class="container">
+          <ul class="breadcumbs__list">
+            <li><a href="/">Интернет-магазин</a></li>
+            <li class="active"><a href="/">Оформление заказа</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- breadcumbs end ========================================================-->
+      
+      <!-- content area ===========================================================-->
+      <div class="main__content">
+        <div class="container bg-contacts">
+          <div class="content__left-big">
+            <div class="content__header">
+              <h2>Контакты</h2>
+            </div>
+            <div class="contacts__map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Wqa00LH1KiwbTB-67lDfLfn0WBy1o__F&amp;width=100%&amp;height=577&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+            </div>
+          </div>
+          <div class="content__right-small">
+            <p class="right__header">Контактная информация</p>
+            <div class="contacts__right"> 
+              <p class="contacts__title">Многоканальные телефоны</p>
+              <ul class="phones contacts__list">
+                <li><span class="phone">+7 (800) 001-23-15</span><span>Отдел продаж</span><span class="time">с 10.00 до 19.00 ежедневно</span></li>
+                <li><span class="phone">+7 (800) 001-23-15</span><span>Горячая линия</span><span class="time">с 10.00 до 19.00 ежедневно</span></li>
+              </ul>
+              <ul class="contacts__list urinfo">
+                <li><span>ООО «Технокараван»</span><span>ОГРН 10777460456607</span></li>
+                <li><span>Юридический адрес:</span><span class="addr">111024, г. Москва, ул, Авиамоторная, д. 65 с.,1</span></li>
+                <li><span>Фактический адрес:</span><span class="addr">241035, г. Брянск, ул. 3-го Интернационала, д. 8</span></li>
+              </ul>
+              <p class="dop-info">Деятельность Интернет-магазина осуществляется в соответствии с действующим российским законодательством, в соответствии с «Законом о защите прав потребителей» №2300-1 от 07.02.1992</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--footer ================================-->
+      <footer class="main__footer clearfix">
+        <div class="container">
+          <div class="footer__left"><a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+            <p>Использование материалов сайта разрешено только с согласия правообладателей.</p>
+            <p> <a href="#">Политика конфиденциальности</a> 2008-2016, Все права защищены.</p>
+            <p>
+               
+              Информация и поддержка:<a href="#">support@mail.ru</a>
+            </p>
+          </div>
+          <div class="footer__right clearfix">
+            <div class="footer__column">
+              <p class="header">Информация для покупателя</p>
+              <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Как купить</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Акции</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <p class="header">Категории товаров</p>
+              <ul>
+                <li><a href="#">Для дома</a></li>
+                <li><a href="#">Для кухни</a></li>
+                <li><a href="#">Красота и Здоровье</a></li>
+                <li><a href="#">Климат </a></li>
+                <li><a href="#">Крупная бытовая техника</a></li>
+                <li><a href="#">Встраиваемая техника</a></li>
+                <li><a href="#">Аудио Фото Видео</a></li>
+                <li><a href="#">Цифровая техника</a></li>
+                <li><a href="#">Уцененный товар</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <div class="header">Есть вопросы? Звоните!</div>
+              <p class="big-tel"> <span>+7 (800)</span>001-23-15</p>
+              <p class="tel__desc">Для звонков по России</p>
+              <p class="big-tel"><span>+7 (800)</span>001-23-15</p>
+              <p class="tel__desc">Для звонков по России</p>
+              <ul class="social__list">
+                <li class="social__item"><a href="http://vk.com">vk</a></li>
+                <li class="social__item"><a href="http://ok.com">ok</a></li>
+                <li class="social__item"><a href="http://facebook.com">fb</a></li>
+              </ul>
+              <div class="market__wiget"><img src="img/yandex-market.png" alt="">
+                <div class="wiget__comment">
+                  <p>Оцените <br/> «ТехноКараван»</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="cart"><a href="cart.html" class="price"><span class="ico"></span><span>Корзина: </span><span>0 руб</span></a>
+            <div class="cols"><span>Товаров: </span><span>0</span></div>
+          </div><a href="#callbackPopup" class="callback fancybox">Заказать звонок</a>
+        </div>
+      </div>
+      <!--footer end =============================-->
+      <div id="callbackPopup">
+        <h2>Обратный звонок</h2>
+        <p>Заполните поля и мы вам перезвоним</p>
+        <form action="#">
+          <input type="text" placeholder="Ваше имя*" require>
+          <input type="tel" placeholder="Ваш телефон*" require>
+          <input type="submit" value="Отправить" class="buy-btn">
+        </form>
+      </div>
+    </div>
+    <!--scripts =======================================================================-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="libs/jquery/dist/jquery.min.js"><\/script>')</script>
+    <script type="text/javascript" src="libs/fancybox/source/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="libs/bxslider/dist/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="libs/formstyler/jquery.formstyler.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!--scripts end =======================================================================-->
+  </body>
+</html>

@@ -1,0 +1,410 @@
+// breadcumbs ===========================================================
+.main__breadcumbs
+	.container
+		ul.breadcumbs__list
+			li: a(href="/") Интернет-магазин
+			li: a(href="/") Ноутбуки, планшеты, компьютеры
+			li: a(href="/") Ноутбуки и компьютеры
+			li.active: a(href="/") Ноутбуки
+// breadcumbs end ========================================================
+
+
+// content area ===========================================================
+.main__content
+	.container
+		.content__left
+			include filter
+		.content__right
+			.content__header.clearfix
+				h2 Ноутбуки
+				.sort 
+					| Сортировать:
+					ul.sort__list#sort
+						li.active: a(href="#") По цене
+						li: a(href="#") По популярности
+						li: a(href="#") По рейтингу
+				.catalog__right
+					.pagination#pagi
+						|Страница: 
+						ul.pagination__list
+							li.active: a(href="") 1
+							li: a(href="") 2
+							li: a(href="") 3
+					.view__type#viewsType
+						.view__tabs.active
+							a(href="#")
+						.view__rows
+							a(href="#")
+			.catalog__main.tabs.active
+				ul.tovars__category.hot
+					li.tovars__item__wrap
+						.tovars__item.clearfix.new
+							a.header.new(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+								.tovar__item--hover
+									p.art артикул: 64508
+									ul.char__list
+										li
+											|Процессор:
+											span Intel Celeron
+										li
+											|Объем ОЗУ:
+											span 2 ГБ
+									a.char__all(href="") Все характеристики
+							.footer.clearfix
+								.buy-btn__group
+									a(href="#").buy-btn Купить
+									a.oneclick.tovar__item--hover(href="") Купить в один клик
+								.price 2 753
+									span руб		
+								.rating.tovar__item--hover
+									.comments__block
+										span.comments__col 12
+										a(href="").comments__more Отзывы
+									.stars__block
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+					li.tovars__item__wrap
+						.tovars__item.clearfix.new
+							a.header.new(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+								.tovar__item--hover
+									p.art артикул: 64508
+									ul.char__list
+										li
+											|Процессор:
+											span Intel Celeron
+										li
+											|Объем ОЗУ:
+											span 2 ГБ
+									a.char__all(href="") Все характеристики
+							.footer.clearfix
+								.buy-btn__group
+									a(href="#").buy-btn Купить
+									a.oneclick.tovar__item--hover(href="") Купить в один клик
+								.price 2 753
+									span руб		
+								.rating.tovar__item--hover
+									.comments__block
+										span.comments__col 12
+										a(href="").comments__more Отзывы
+									.stars__block
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+					li.tovars__item__wrap
+						.tovars__item.clearfix.new
+							a.header.new(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+								.tovar__item--hover
+									p.art артикул: 64508
+									ul.char__list
+										li
+											|Процессор:
+											span Intel Celeron
+										li
+											|Объем ОЗУ:
+											span 2 ГБ
+									a.char__all(href="") Все характеристики
+							.footer.clearfix
+								.buy-btn__group
+									a(href="#").buy-btn Купить
+									a.oneclick.tovar__item--hover(href="") Купить в один клик
+								.price 2 753
+									span руб		
+								.rating.tovar__item--hover
+									.comments__block
+										span.comments__col 12
+										a(href="").comments__more Отзывы
+									.stars__block
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+					li.tovars__item__wrap
+						.tovars__item.clearfix.new
+							a.header.new(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+								.tovar__item--hover
+									p.art артикул: 64508
+									ul.char__list
+										li
+											|Процессор:
+											span Intel Celeron
+										li
+											|Объем ОЗУ:
+											span 2 ГБ
+									a.char__all(href="") Все характеристики
+							.footer.clearfix
+								.buy-btn__group
+									a(href="#").buy-btn Купить
+									a.oneclick.tovar__item--hover(href="") Купить в один клик
+								.price 2 753
+									span руб		
+								.rating.tovar__item--hover
+									.comments__block
+										span.comments__col 12
+										a(href="").comments__more Отзывы
+									.stars__block
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+					li.tovars__item__wrap
+						.tovars__item.clearfix.new
+							a.header.new(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+								.tovar__item--hover
+									p.art артикул: 64508
+									ul.char__list
+										li
+											|Процессор:
+											span Intel Celeron
+										li
+											|Объем ОЗУ:
+											span 2 ГБ
+									a.char__all(href="") Все характеристики
+							.footer.clearfix
+								.buy-btn__group
+									a(href="#").buy-btn Купить
+									a.oneclick.tovar__item--hover(href="") Купить в один клик
+								.price 2 753
+									span руб		
+								.rating.tovar__item--hover
+									.comments__block
+										span.comments__col 12
+										a(href="").comments__more Отзывы
+									.stars__block
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+					li.tovars__item__wrap
+						.tovars__item.clearfix.new
+							a.header.new(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+								.tovar__item--hover
+									p.art артикул: 64508
+									ul.char__list
+										li
+											|Процессор:
+											span Intel Celeron
+										li
+											|Объем ОЗУ:
+											span 2 ГБ
+									a.char__all(href="") Все характеристики
+							.footer.clearfix
+								.buy-btn__group
+									a(href="#").buy-btn Купить
+									a.oneclick.tovar__item--hover(href="") Купить в один клик
+								.price 2 753
+									span руб		
+								.rating.tovar__item--hover
+									.comments__block
+										span.comments__col 12
+										a(href="").comments__more Отзывы
+									.stars__block
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+					li.tovars__item__wrap
+						.tovars__item.clearfix.new
+							a.header.new(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+								.tovar__item--hover
+									p.art артикул: 64508
+									ul.char__list
+										li
+											|Процессор:
+											span Intel Celeron
+										li
+											|Объем ОЗУ:
+											span 2 ГБ
+									a.char__all(href="") Все характеристики
+							.footer.clearfix
+								.buy-btn__group
+									a(href="#").buy-btn Купить
+									a.oneclick.tovar__item--hover(href="") Купить в один клик
+								.price 2 753
+									span руб		
+								.rating.tovar__item--hover
+									.comments__block
+										span.comments__col 12
+										a(href="").comments__more Отзывы
+									.stars__block
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+					li.tovars__item__wrap
+						.tovars__item.clearfix.new
+							a.header.new(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+								.tovar__item--hover
+									p.art артикул: 64508
+									ul.char__list
+										li
+											|Процессор:
+											span Intel Celeron
+										li
+											|Объем ОЗУ:
+											span 2 ГБ
+									a.char__all(href="") Все характеристики
+							.footer.clearfix
+								.buy-btn__group
+									a(href="#").buy-btn Купить
+									a.oneclick.tovar__item--hover(href="") Купить в один клик
+								.price 2 753
+									span руб		
+								.rating.tovar__item--hover
+									.comments__block
+										span.comments__col 12
+										a(href="").comments__more Отзывы
+									.stars__block
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star
+										a(href="").star																																																																						
+			.catalog__bottom.clearfix
+				.view-output#viewOutput
+					| Выводить по:
+					ul.view-output__list
+						li.active: a(href="#") 10
+						li: a(href="#")	20
+					| Товаров
+				.catalog__right
+					.pagination#pagi
+						|Страница: 
+						ul.pagination__list
+							li.active: a(href="") 1
+							li: a(href="") 2
+							li: a(href="") 3
+					.view__type#viewsType
+						.view__tabs.active
+							a(href="#")
+						.view__rows
+							a(href="#")
+			.catalog__recently
+				h2 Вы недавно смотрели
+				.recently__gal
+					ul.tovars__category#recentlyCarousel
+						li.tovars__item
+							a.header(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+						li.tovars__item
+							a.header(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+						li.tovars__item
+							a.header(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+						li.tovars__item
+							a.header(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+						li.tovars__item
+							a.header(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+						li.tovars__item
+							a.header(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+						li.tovars__item
+							a.header(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+						li.tovars__item
+							a.header(href="tovar.html")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+
+
+
+// content area end ========================================================

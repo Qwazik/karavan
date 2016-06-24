@@ -1,0 +1,56 @@
+// breadcumbs ===========================================================
+.main__breadcumbs
+	.container
+		ul.breadcumbs__list
+			li: a(href="/") Интернет-магазин
+			li.active: a(href="/") Доставка и оплата
+// breadcumbs end ========================================================
+
+
+// content area ===========================================================
+.main__content
+	.container
+		.content__left.cnt-delivery
+			.left__menu
+				ul.menu
+					li: a(href="delivery.html") 
+						span.ico 
+						|Доставка
+					li.active: a(href="howpay.html").active 
+						span.ico
+						|Оплата
+		.content__right
+			.content__header.clearfix
+				h2 Как оплатить
+				p Вы можете оплатить покупку следующими способами:
+			table.howpay
+				tr.howpay__row.clearfix
+					td.howpay__type
+						span.ico 
+						| Электронные деньги
+					td.howpay__text
+						p На данный момент мы принимаем следующие электронные деньги: WebMoney Transfer, ЯndexДеньги, КредитПилот, Рапида и E-gold.
+				tr.howpay__row.clearfix
+					td.howpay__type
+						span.ico 
+						| банковские карты
+					td.howpay__text
+						p Оплата банковской картой через ROBOKASSA является одним из самых распространенных способов расчетов. Причина данной положительной тенденции — тот факт, что оплата по банковской карте  позволяет быстро пополнить счет и рассчитаться за покупки, не держа при этом наличные деньги «на руках», и клиенту это весьма удобно.
+				tr.howpay__row.clearfix
+					td.howpay__type
+						span.ico 
+						| наличные
+					td.howpay__text
+						p Наличными или банковской картой при доставке курьерской службой Наличными или банковской картой при самовывозе из магазина сети 
+			.content__inner
+				h2 Оплата и цены
+				p Цены, указанные на сайте, являются окончательными и не требуют доплат при стандартных условиях поставки. Все налоги включены в стоимость товара. 
+				p Внимание! Для каждого отдельного заказа возможен только один способ оплаты. Оплата заказа по частям различными способами невозможна. 
+				p Оплата производится наличными курьеру при доставке или в магазине при самовывозе. 
+				
+// content area end ========================================================
+
+.main__map
+	.map__text Пункты самовоза
+	.map
+		script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=g4sqaLW6KyfwnegdLRAq1TuD_QiP61DU&width=100%&height=441&lang=ru_RU&sourceType=constructor&scroll=true")

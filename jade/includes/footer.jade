@@ -1,0 +1,78 @@
+//footer ================================
+footer.main__footer.clearfix
+	.container
+		.footer__left
+			a(href="/").logo
+					img(src="img/logo.png", alt="")
+			p Использование материалов сайта разрешено только с согласия правообладателей.
+			
+			p 
+				a(href="#") Политика конфиденциальности
+				|  2008-2016, Все права защищены.
+			
+			p 
+				| Информация и поддержка:
+				a(href="#") support@mail.ru
+		.footer__right.clearfix
+			.footer__column
+				p.header Информация для покупателя
+				ul
+					li: a(href="#") О компании
+					li: a(href="#") Как купить
+					li: a(href="#") Гарантия
+					li: a(href="#") Сотрудничество
+					li: a(href="#") Контакты
+					li: a(href="#") Доставка и оплата
+					li: a(href="#") Акции
+			.footer__column
+				p.header Категории товаров
+				ul
+					li: a(href="#") Для дома
+					li: a(href="#") Для кухни
+					li: a(href="#") Красота и Здоровье
+					li: a(href="#") Климат 
+					li: a(href="#") Крупная бытовая техника
+					li: a(href="#") Встраиваемая техника
+					li: a(href="#") Аудио Фото Видео
+					li: a(href="#") Цифровая техника
+					li: a(href="#") Уцененный товар
+			.footer__column
+				.header Есть вопросы? Звоните!
+				p.big-tel 
+					span +7 (800)
+					| 001-23-15
+				p.tel__desc Для звонков по России
+				p.big-tel
+					span +7 (800)
+					| 001-23-15
+				p.tel__desc Для звонков по России
+				ul.social__list
+					li.social__item: a(href="http://vk.com") vk
+					li.social__item: a(href="http://ok.com") ok
+					li.social__item: a(href="http://facebook.com") fb
+				.market__wiget
+					img(src="img/yandex-market.png", alt="")
+					.wiget__comment
+						p Оцените <br/> «ТехноКараван»
+.footer__bottom
+	.container
+		.cart
+			a(href="cart.html").price
+				span.ico
+				span Корзина: 
+				span 0 руб
+			.cols
+				span Товаров: 
+				span 0
+		a.callback.fancybox(href="#callbackPopup") Заказать звонок
+
+
+//footer end =============================
+
+#callbackPopup
+	h2 Обратный звонок
+	p Заполните поля и мы вам перезвоним
+	form(action="#")
+		input(type="text" placeholder="Ваше имя*" require)
+		input(type="tel" placeholder="Ваш телефон*" require)
+		input(type="submit", value="Отправить").buy-btn

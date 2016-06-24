@@ -1,0 +1,236 @@
+// breadcumbs ===========================================================
+.main__breadcumbs
+	.container
+		ul.breadcumbs__list
+			li: a(href="/") Интернет-магазин
+			li: a(href="/") Ноутбуки, планшеты, компьютеры
+			li: a(href="/") Ноутбуки и компьютеры
+			li.active: a(href="/") Ноутбуки
+// breadcumbs end ========================================================
+
+
+// content area ===========================================================
+.main__content
+	.container
+		.content__left
+			include filter
+		.content__right
+			.tovar__main.clearfix
+				.tovar__info
+					.big__photo.new
+						img#mainPhoto(src="img/prev-big.jpg", alt="")
+						.photo__list
+							.photo__controls#bigPhotoColntrols
+								button.top
+								button.bot
+							#photoList
+								li: a(href="img/1pr.png"): img(src="img/1pr.png", alt="")
+								li: a(href="img/2pr.png"): img(src="img/2pr.png", alt="")
+								li: a(href="img/2pr.png"): img(src="img/2pr.png", alt="")
+								li: a(href="img/2pr.png"): img(src="img/2pr.png", alt="")
+								li: a(href="img/3pr.png"): img(src="img/3pr.png", alt="")
+								li: a(href="img/3pr.png"): img(src="img/3pr.png", alt="")
+								li: a(href="img/3pr.png"): img(src="img/3pr.png", alt="")
+								li: a(href="img/2pr.png"): img(src="img/2pr.png", alt="")
+								li: a(href="img/2pr.png"): img(src="img/2pr.png", alt="")
+								li: a(href="img/2pr.png"): img(src="img/2pr.png", alt="")
+								li: a(href="img/1pr.png"): img(src="img/1pr.png", alt="")
+					#tovarInfoTabs
+						ul.tovar__nav.tab__controls
+							li.active: a(href="desc") Описание
+							li: a(href="char") Все характеристики
+							li: a(href="acc") Аксессуары
+							li: a(href="rev") Отзывы
+						.tovar__content.desc.active.tab__content
+							h2 Описание
+							p Характеристики и комплектация товара могут изменяться производителем без уведомления.  Магазин не несет ответственность за изменения, внесенные производителем.  Характеристики и комплектация товара могут изменяться производителем без  уведомления. Магазин не несет ответственность за изменения, внесенные производителем 
+							h2 Спецфикация
+							.tovar-char__table
+								p.tovar-char__row.clearfix
+									span.tovar-char__name Диагональ экрана
+									span.tovar-char__val 15,6"
+								p.tovar-char__row.clearfix
+									span.tovar-char__name Разрешение экрана
+									span.tovar-char__val Full HD 1920x1080
+								p.tovar-char__row.clearfix
+									span.tovar-char__name Покрытие экрана
+									span.tovar-char__val Матовое
+								p.tovar-char__row.clearfix
+									span.tovar-char__name Сенсорный экран
+									span.tovar-char__val Да
+								p.tovar-char__row.clearfix
+									span.tovar-char__name Центральный процессор
+									span.tovar-char__val Intel Core i7
+								p.tovar-char__row.clearfix
+									span.tovar-char__name Модель центрального процессора
+									span.tovar-char__val 6500U
+								p.tovar-char__row.clearfix
+									span.tovar-char__name Количество ядер
+									span.tovar-char__val 2 ядра
+								p.tovar-char__row.clearfix
+									span.tovar-char__name Частота центрального процессора
+									span.tovar-char__val 2,5 ГГц
+							.tovar__reviews
+								h2 Отзывы
+								.reviews__form
+									form(action="")
+										input(type="text" placeholder="Ваше имя*" required)
+										input(type="mail" placeholder="E-mail*" required)
+										textarea(placeholder="Комментарий*" required)
+										input(type="submit", value="Отправить").buy-btn
+								.reviews__item
+						.tovar__content.char.tab__content
+							h2 Все характеристики
+						.tovar__content.acc.tab__content
+							h2 Аксессуары
+						.tovar__content.rev.tab__content
+							h2 Отзывы
+				.tovar__pay
+					.tpay__top
+						strong.tovar__name 
+							| Ноутбук Lenovo Yoga 500 (80R6004EUA) Black
+							span Артикул: 1031728
+						.stars__block
+							a(href="").star
+							a(href="").star
+							a(href="").star
+							a(href="").star
+							a(href="").star
+						.tovar__row
+							p.decorate В наличии
+							.price 2 627 руб
+					.tpay__bot
+						p.header__desc Способ получения заказа
+						.checkbox__group
+							.checkbox__row
+								label.sum__checkbox
+									input(type="checkbox", name="")
+									span Забрать самому
+								span.tip
+									.tip__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolorum.
+								span.delivery__type-price 0 руб
+							.checkbox__row
+								label.sum__checkbox
+									input(type="checkbox", name="")
+									span Курьерская доставка
+								span.tip
+									.tip__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, culpa?
+								span.delivery__type-price 500 руб
+							.checkbox__row
+								label.sum__checkbox
+									input(type="checkbox", name="")
+									span Срочная доставка (VIP)
+								span.tip
+									.tip__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, magni.
+								span.delivery__type-price 2000 руб
+					.tpay__buttons.clearfix
+						a(href="#").buy-btn Купить
+						a(href="#").buy-btn.oneclick Купить в один клик
+					.tpay__guarantee
+						.guarantee__row.clearfix
+							span.guarantee__name Гарантия прозводителя:
+							span.guarantee__val: img(src="img/garantie.png", alt="")
+						.guarantee__row.clearfix
+							span.guarantee__name Страна производитель:
+							span.guarantee__val Малайзия
+						.guarantee__row.last.clearfix
+							span.guarantee__name Способы оплаты
+							span.guarantee__val: img(src="img/pay__methods.jpg", alt="")
+
+
+			.catalog__recently
+				h2 С этим товаром покупают
+				.recently__gal
+					ul.tovars__category#carouselWidth
+						li.tovars__item.new
+								a.header(href="#")
+									img(src="img/pc1.jpg", alt="")
+								.content
+									a.title(href="#") Кофеварка
+									a.mark(href="#") Nespresso krups
+								.footer
+									a(href="#").buy-btn Купить
+									.price 2 753
+										span руб
+						li.tovars__item.hit
+								a.header(href="#")
+									img(src="img/pc1.jpg", alt="")
+								.content
+									a.title(href="#") Кофеварка
+									a.mark(href="#") Nespresso krups
+								.footer
+									a(href="#").buy-btn Купить
+									.price 2 753
+										span руб
+						li.tovars__item
+							a.header(href="#")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer.hit
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+						li.tovars__item.hit
+							a.header(href="#")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+			.catalog__recently
+				h2 Вы недавно смотрели
+				.recently__gal
+					ul.tovars__category#recentlyCarousel
+						li.tovars__item.new
+							a.header(href="#")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+						li.tovars__item.hit
+							a.header(href="#")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+						li.tovars__item
+							a.header(href="#")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer.hit
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+						li.tovars__item.hit
+							a.header(href="#")
+								img(src="img/pc1.jpg", alt="")
+							.content
+								a.title(href="#") Кофеварка
+								a.mark(href="#") Nespresso krups
+							.footer
+								a(href="#").buy-btn Купить
+								.price 2 753
+									span руб
+
+
+// content area end ========================================================
+
+.main__map
+	.map__text Пункты самовоза
+	.map
+		script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=g4sqaLW6KyfwnegdLRAq1TuD_QiP61DU&width=100%&height=441&lang=ru_RU&sourceType=constructor&scroll=true")

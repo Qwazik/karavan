@@ -1,0 +1,62 @@
+mixin submenuItem(id, name)
+	.submenu__item.clearfix(id=id)
+		.container
+			.submenu__content
+				.submenu-section
+					strong.submenu-section__title= name
+					ul.submenu-section__list
+						li: a(href="#") Мультиварки
+						li: a(href="#") Аксессуары для мультиварок
+						li: a(href="#") Соковыжималки
+						li: a(href="#") Тостеры и сэндвичницы
+						li: a(href="#") Пароварки
+						li: a(href="#") Хлебопечи
+						li: a(href="#") Блендеры и миксеры
+				.submenu-section
+					strong.submenu-section__title Кухонная техника
+					ul.submenu-section__list
+						li: a(href="#") Мультиварки
+						li: a(href="#") Аксессуары для мультиварок
+						li: a(href="#") Соковыжималки
+						li: a(href="#") Тостеры и сэндвичницы
+						li: a(href="#") Пароварки
+						li: a(href="#") Хлебопечи
+						li: a(href="#") Блендеры и миксеры
+				.submenu-section
+					strong.submenu-section__title Кухонная техника
+					ul.submenu-section__list
+						li: a(href="#") Мультиварки
+						li: a(href="#") Аксессуары для мультиварок
+						li: a(href="#") Соковыжималки
+						li: a(href="#") Тостеры и сэндвичницы
+						li: a(href="#") Пароварки
+						li: a(href="#") Хлебопечи
+						li: a(href="#") Блендеры и миксеры
+				.submenu-section
+					strong.submenu-section__title Сервировка
+					ul.submenu-section__list
+						li: a(href="#") Чашки
+						li: a(href="#") Столовые приборы
+				.submenu-section
+					strong.submenu-section__title Сервировка
+					ul.submenu-section__list
+						li: a(href="#") Чашки
+						li: a(href="#") Столовые приборы
+				.submenu-section
+					strong.submenu-section__title Сервировка
+					ul.submenu-section__list
+						li: a(href="#") Чашки
+						li: a(href="#") Столовые приборы
+			.submenu__image
+				img(src="img/submenu-kuhna.png", alt="")
+.submenu-teh
+	+submenuItem('s-home', 'Домашняя техника')
+	+submenuItem('s-kuhna', 'Кухонная техника')
+	+submenuItem('s-zdor', 'Здоровье техника')
+	+submenuItem('s-clim', 'Климат техника')
+	+submenuItem('s-bit', 'Бытовая техника')
+	+submenuItem('s-vstr', 'Встраиваемая техника')
+	+submenuItem('s-afv', 'Аудио техника')
+	+submenuItem('s-cifr', 'Цифровая техника')
+	+submenuItem('s-ucen', 'Уцененный товар')
+	

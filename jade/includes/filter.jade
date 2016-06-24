@@ -1,0 +1,126 @@
+.filter#filter
+	form(action="")
+		input(type="reset", value="Сбросить")
+		.filter__row
+			p.filter__title Производитель
+			.input__group
+				label
+					input(type="checkbox")
+					span Acer
+				label
+					input(type="checkbox")
+					span Apple
+				label
+					input(type="checkbox")
+					span Asus
+				label
+					input(type="checkbox")
+					span Dell
+				label
+					input(type="checkbox")
+					span Fujitsu
+				label
+					input(type="checkbox")
+					span HP
+				label
+					input(type="checkbox")
+					span Lenovo
+				label
+					input(type="checkbox")
+					span MSI
+		.filter__row
+			p.filter__title Цена
+			.price__block
+				.range__output
+					|От
+					input.from(readonly id="priceFrom")
+					|До
+					input.to(readonly id="priceTo")
+				.range__input
+					span.min От 5000
+					span.max До 10000
+					#filterSliderRange
+		.filter__row
+			p.filter__title Диагональ экрана
+			.input__group
+				label
+					input(type="checkbox")
+					span 11,9"
+				label
+					input(type="checkbox")
+					span 12"-13,9"
+				label
+					input(type="checkbox")
+					span 14"-16"
+				label
+					input(type="checkbox")
+					span 17"
+				label
+					input(type="checkbox")
+					span 19"
+				label
+					input(type="checkbox")
+					span 21"
+		.filter__row
+			p.filter__title Количество ядер
+			.input__group
+				label
+					input(type="checkbox")
+					span 2 ядра
+				label
+					input(type="checkbox")
+					span 4 ядра
+		.filter__row
+			p.filter__title Объем ОЗУ
+			.input__group
+				label
+					input(type="checkbox")
+					span 2 ГБ
+				label
+					input(type="checkbox")
+					span 4 ГБ
+				label
+					input(type="checkbox")
+					span 6 ГБ
+				label
+					input(type="checkbox")
+					span 8 ГБ
+				label
+					input(type="checkbox")
+					span 10 ГБ
+				label
+					input(type="checkbox")
+					span 12 ГБ
+				label
+					input(type="checkbox")
+					span 16 ГБ
+				label
+					input(type="checkbox")
+					span 32 ГБ
+		.filter__row
+			p.filter__title Цвет
+			.input__group
+				label
+					input(type="checkbox")
+					span Белый
+				label
+					input(type="checkbox")
+					span Черный
+				label
+					input(type="checkbox")
+					span Серебро
+				label
+					input(type="checkbox")
+					span Золото
+				label
+					input(type="checkbox")
+					span Красный
+				label
+					input(type="checkbox")
+					span Синий
+				label
+					input(type="checkbox")
+					span Зеленый
+		a(href="").filter__more Больше характеристик
+
+		

@@ -1,0 +1,87 @@
+// header ===============================
+header.main__header
+	.header__top.clearfix
+		.container
+			.main__menu
+				ul.menu
+					li
+						a(href="about.html") О компании
+					li
+						a(href="delivery.html") Доставка и оплата
+					li
+						a.discount(href="discount.html") Акции
+					li
+						a(href="vivoz.html") Самовывоз
+					li
+						a(href="#") Сотрудничество
+					li
+						a(href="contacts.html") Контакты
+			.user__block
+				a(href="#").auth
+					span.ico 
+					|Вход
+				a(href="cart.html").cart
+					span.ico 
+					|Корзина
+	.header__center
+		.container
+			a(href="index.html").logo
+				img(src="img/logo.png", alt="")
+				p.logo__desc Интернет магазин бытовой техники и электроники
+			.header__phones
+				p.big-tel <span>+7 (800)</span> 001-23-15
+				p.big-tel <span>+7 (800)</span> 001-23-15
+				p.graph
+					span.title Время-работы:
+					span.val c 10:00 до 19:00 
+						span ежедневно
+			.search
+				form
+					input(type="text" placeholder="Поиск")
+					input(type="submit" value="" class="magnific")
+	.header__menu-teh
+		.container
+			.menu-teh
+				ul.menu
+					li
+						a.clearfix(href="s-home")
+							.ico
+							.text  Для<br/>дома
+					li
+						a.clearfix(href="s-kuhna") 
+							.ico
+							.text Для кухни
+					li
+						a.clearfix(href="s-zdor") 
+							.ico
+							.text Красота и здоровье
+					li
+						a.clearfix(href="s-clim") 
+							.ico
+							.text Климат
+					li
+						a.clearfix(href="s-bit") 
+							.ico
+							.text Бытовая техника
+					li
+						a.clearfix(href="s-vstr") 
+							.ico
+							.text Встраиваемая техника
+					li
+						a.clearfix(href="s-afv") 
+							.ico
+							.text Аудио Фото Видео
+					li
+						a.clearfix(href="s-cifr") 
+							.ico
+							.text Цифровая техника
+					li
+						a.clearfix(href="s-ucen") 
+							.ico
+							.text Уцененный товар
+		include teh-submenu
+				
+
+
+
+//header end ===============================
