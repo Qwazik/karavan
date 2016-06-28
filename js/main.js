@@ -103,13 +103,25 @@ $('.header__menu-teh').on('mouseleave', function(){
 	$('.menu-teh .menu li').removeClass('active');
 })
 
+var menSi;
+
 $('.menu-teh .menu li').on('mouseover', function(e){
+	var i = 0;
+	clearInterval(menSi);
 	e.preventDefault();
 	$(this).siblings().removeClass('active');
 	$(this).addClass('active');
 	var submenuId = $(this).find('a').attr('href');
-	openSubmenu(submenuId);
+	
+	menSi = setInterval(function(){
+		i++;
+		if(i == 7) {openSubmenu(submenuId)};
+		console.log(i);
+	}, 100);
+})
 
+$('.menu-teh .menu li').on('mouseleave', function(){
+	clearInterval(menSi);
 })
 
 var openSubmenu = function(id){

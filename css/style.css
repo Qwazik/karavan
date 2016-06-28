@@ -1012,6 +1012,9 @@ p {
   .content__right .catalog__recently h2, .content__left-big .catalog__recently h2 {
     padding-left: 20px; }
 
+.content__right {
+  min-height: 500px; }
+
 .content__left, .content__right-small {
   width: 25%; }
   .content__left.cnt-delivery, .content__right-small.cnt-delivery {
@@ -1342,6 +1345,57 @@ p {
 
 .left__menu li.active .ico {
   background-image: url("../img/left-menu-icons-hover.png"); }
+
+.menu.cabinet a {
+  font-size: 18px; }
+
+.menu.cabinet li.active a, .menu.cabinet li:hover a {
+  background-color: #FDDC00;
+  color: black; }
+
+.menu.cabinet li .ico {
+  background-image: url("../img/menu-cabinet-icons.png");
+  background-position: 0 0;
+  width: 40px;
+  height: 36px;
+  margin: 10px;
+  margin-left: 0; }
+
+.menu.cabinet li span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal; }
+
+.menu.cabinet li:nth-child(2) .ico {
+  background-position: 0 -63px;
+  height: 38px; }
+
+.menu.cabinet li:nth-child(3) .ico {
+  background-position: 0 -133px; }
+
+.menu.cabinet li:nth-child(4) .ico {
+  background-position: 0 -200px;
+  height: 40px; }
+
+.menu.cabinet li:nth-child(5) .ico {
+  background-position: 0 -267px;
+  height: 40px; }
+
+.empty-table {
+  text-align: center;
+  padding: 22px 0; }
+  .empty-table p {
+    color: #434343;
+    font-size: 18px;
+    margin-bottom: 17px; }
+  .empty-table .buy-btn {
+    display: inline-block !important;
+    width: auto;
+    float: none;
+    padding: 11px 35px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .8px; }
 
 /*=====================================================
                       pay
@@ -2274,6 +2328,51 @@ p.title {
 .container,
 .clearfix {
   *zoom: 1; }
+
+/*-------------------------------------------------*/
+/*    cabinet
+/*-------------------------------------------------*/
+.orders__nav {
+  font-size: 0;
+  padding: 16px 22px;
+  border-bottom: 1px solid #f0f0f0; }
+  .orders__nav li {
+    display: inline-block; }
+    .orders__nav li a {
+      border: 1px solid #e8e8e8;
+      display: block;
+      text-transform: uppercase;
+      padding: 25px 27px;
+      line-height: 0;
+      border-right: none;
+      font-weight: 700;
+      letter-spacing: 1.1px; }
+    .orders__nav li:last-child a {
+      border-right: 1px solid #e8e8e8; }
+    .orders__nav li:hover a, .orders__nav li.active a {
+      color: #131313;
+      background-color: #FBFBFB; }
+
+table.orders {
+  width: 100%;
+  text-align: center;
+  font-size: 14px; }
+  table.orders td {
+    padding: 16px 0;
+    border-left: 1px solid #f0f0f0; }
+    table.orders td:first-child {
+      border-left: none; }
+    table.orders td.sent {
+      background-color: #6EB337;
+      color: white; }
+    table.orders td.inproc {
+      background-color: #FDDC00;
+      color: black; }
+  table.orders tr {
+    border-bottom: 1px solid #f0f0f0; }
+  table.orders thead {
+    background-color: #FBFBFB;
+    color: #7f7f7f; }
 
 /* ==========================================================================
    Print styles

@@ -1,0 +1,98 @@
+// breadcumbs ===========================================================
+.main__breadcumbs
+	.container
+		ul.breadcumbs__list
+			li: a(href="/") Интернет-магазин
+			li.active: a(href="/") Доставка и оплата
+// breadcumbs end ========================================================
+
+
+// content area ===========================================================
+.main__content
+	.container
+		.content__header: h2 Личный кабинет
+		.content__left
+			.left__menu
+				ul.menu.cabinet
+					li.active: a(href="delivery.html") 
+						span.ico 
+						span Мои заказы
+					li: a(href="howpay.html").active 
+						span.ico
+						span Моя корзина
+					li: a(href="howpay.html").active 
+						span.ico
+						span Личные данные
+					li: a(href="howpay.html").active 
+						span.ico
+						span Изменить пароль
+					li: a(href="howpay.html").active 
+						span.ico
+						span Подписка на рассылку
+		.content__right
+			.orders__wrap#ordersTabs
+				ul.orders__nav.tabs-nav
+					li.active: a(href="#orderTable") Текущие
+					li: a(href="#orderHistory") История
+				.tabs-content
+					.tabs-content__item#orderTable.active
+							table.orders
+								thead
+									tr
+										td Состояние
+										td № Заказа
+										td Время создания
+										td Способ доставки
+										td Сумма заказа
+								tbody
+									tr
+										td.sent Отправлен
+										td № 29345
+										td 07.05.2016
+										td Самовывоз
+										td 25 550 руб
+									tr
+										td.inproc В процессе
+										td № 29345
+										td 07.05.2016
+										td Самовывоз
+										td 25 550 руб
+									tr
+										td.inproc В процессе
+										td № 29345
+										td 07.05.2016
+										td Самовывоз
+										td 25 550 руб
+					.tabs-content__item#orderHistory
+							table.orders
+								thead
+									tr
+										td Состояние
+										td № Заказа
+										td Время создания
+										td Способ доставки
+										td Сумма заказа
+								tbody
+									tr
+										td.sent Доставлен
+										td № 29345
+										td 07.05.2016
+										td Самовывоз
+										td 25 550 руб
+									tr
+										td.sent Доставлен
+										td № 29345
+										td 07.05.2016
+										td Самовывоз
+										td 25 550 руб
+									tr
+										td.sent Доставлен
+										td № 29345
+										td 07.05.2016
+										td Самовывоз
+										td 25 550 руб
+						.empty-table
+							p Вы не совершали покупок в нашем магазине
+							a(href="#").buy-btn Сделать первый заказ
+// content area end ========================================================
+

@@ -56,7 +56,7 @@ plugins
 var tovarCarouselCollection = [];
 
 $(document).ready(function(){
-    $('#pointTabs').qTabs();  //tabinit
+    $('#pointTabs, #ordersTabs').qTabs();  //tabinit
     $('.fancybox').fancybox(); //fancyboxinit
     $('.point-list__item').qToggle();
     $('#mainSlider').bxSlider({
