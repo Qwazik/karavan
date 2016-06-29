@@ -70,4 +70,30 @@
 								.tabs-content__item#pointMap
 									.oformlenie__map
 										script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Wqa00LH1KiwbTB-67lDfLfn0WBy1o__F&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=true")
-			.content__right-small.contacts__right
+			.content__right-small.oformlenie__right
+				p.oformlenie__col В вашем заказе: 1 товар
+				.oformlenie__cart
+					.oformlenie__item
+						.oformlenie__image
+							img(src='img/oformlenie-nout.jpg', alt='')
+						.oformlenie__desc
+							a(href='#') Ноутбук Asus R540SA-XX036T
+							span.price 2 627 руб
+							span.col-price 3 x 2627 руб
+				.final__sum
+					p.header__desc
+						| Итого:
+						.sum__block
+							.sum__row.clearfix
+								span.sum__name Стоимость:
+								span.sum__val
+									span.num 0 руб.
+							.sum__row.clearfix
+								span.sum__name Доставка до точки выдачи:
+								span.sum__val
+									span.num 0 руб.
+							.sum__row.end.clearfix
+								span.sum__name Всего к оплате:
+								span.sum__val
+									span.num 0 руб.
+						input.buy-btn(type='submit', value='Завершить оформление')

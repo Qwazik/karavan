@@ -18,7 +18,7 @@ gulp.task('serve', ['sass'], function() {
     browserSync.init({
         server: {
         	baseDir: './',
-            index: 'cabinet.html'
+            index: 'index.html'
         },
         stream: true,
         notify: false

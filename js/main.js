@@ -115,8 +115,8 @@ $('.menu-teh .menu li').on('mouseover', function(e){
 	
 	menSi = setInterval(function(){
 		i++;
-		if(i == 7) {openSubmenu(submenuId)};
-		console.log(i);
+		if(i == 2) {openSubmenu(submenuId)};
+		// console.log(i);
 	}, 100);
 })
 
@@ -135,3 +135,25 @@ $('#payMethod label').on('click', function(e){
 	$(this).addClass('active');
 	$(this).siblings().removeClass('active');
 })
+
+$('#userBlock .auth').on('click', function(){
+	$('.user__dropdown').show().stop(true, true).animate({
+		top: '36px',
+		opacity: 1
+	}, 300);
+	return false;
+})
+
+$('#userBlock').on('mouseleave', function(){
+	$('.user__dropdown').stop(true, true).animate({
+		top: '-50px',
+		opacity: 0
+	}, 300, function(){
+		$(this).hide();
+	});
+})
+
+// $('#rememberMe').click(function(e){
+// 	// e.preventDefault();
+// 	$(this).find('.input-checkbox').toggleClass('active');
+// })

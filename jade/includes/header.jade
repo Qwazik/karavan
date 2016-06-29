@@ -1,4 +1,59 @@
 // header ===============================
+#mainAuth.main-form__wrap
+	form(action="")
+		.content__header Вход в личный кабинет
+		.col__row.clearfix
+			.col__left
+				.col__content
+					label
+						span E-mail:
+						input(type="text")
+					label
+						span Пароль:
+						input(type="text")
+					.form__footer
+						a(href="#") Забыли пароль ?
+						label#rememberMe
+							input(type="checkbox")
+							.input-checkbox
+							span Запомнить меня
+						button(type="submit") Войти
+			.sep: span или
+			.col__right
+				p Авторизуйтесь через соцсети
+				.social__buttons
+					a(href="#")
+					a(href="#")
+					a(href="#")
+#mainReg.main-form__wrap
+	form(action="")
+		.content__header Регистрация
+		.col__row.clearfix
+			.col__left
+				.col__content
+					label
+						span E-mail:
+						input(type="text")
+					label
+						span Пароль:
+						input(type="password")
+					label
+						span Пароль:
+						input(type="password")
+					.form__footer
+						label#rememberMe
+							input(type="checkbox")
+							.input-checkbox
+							span Я даю согласие на обработку моих персональных данных.
+						button(type="submit") Зарегистрироваться
+						p.smalltext Нажатием кнопки «Зарегистрироваться» я даю свое согласие на обработку персональных данных в соответствии с указанными <a href="">здесь</a> условиями.
+			.sep: span или
+			.col__right
+				p Зарегистрируйтесь через соцсети
+				.social__buttons
+					a(href="#")
+					a(href="#")
+					a(href="#")						
 header.main__header
 	.header__top.clearfix
 		.container
@@ -16,13 +71,16 @@ header.main__header
 						a(href="#") Сотрудничество
 					li
 						a(href="contacts.html") Контакты
-			.user__block
-				a(href="#").auth
+			.user__block#userBlock
+				a(href="#auth").auth
 					span.ico 
 					|Вход
 				a(href="cart.html").cart
 					span.ico 
 					|Корзина
+				.user__dropdown
+					a(href="#mainAuth" class="fancybox").enter Войти на сайт
+					a(href="#mainReg" class="fancybox").reg Зарегистрироваться
 	.header__center
 		.container
 			a(href="index.html").logo
@@ -80,8 +138,4 @@ header.main__header
 							.ico
 							.text Уцененный товар
 		include teh-submenu
-				
-
-
-
 //header end ===============================

@@ -34,6 +34,68 @@
     <![endif]-->
     <div class="main__wrap">
       <!-- header ===============================-->
+      <div id="mainAuth" class="main-form__wrap">
+        <form action="">
+          <div class="content__header">Вход в личный кабинет</div>
+          <div class="col__row clearfix">
+            <div class="col__left">
+              <div class="col__content">
+                <label><span>E-mail:</span>
+                  <input type="text">
+                </label>
+                <label><span>Пароль:</span>
+                  <input type="text">
+                </label>
+                <div class="form__footer"><a href="#">Забыли пароль ?</a>
+                  <label id="rememberMe">
+                    <input type="checkbox">
+                    <div class="input-checkbox"></div><span>Запомнить меня</span>
+                  </label>
+                  <button type="submit">Войти</button>
+                </div>
+              </div>
+            </div>
+            <div class="sep"><span>или</span></div>
+            <div class="col__right">
+              <p>Авторизуйтесь через соцсети</p>
+              <div class="social__buttons"><a href="#"></a><a href="#"></a><a href="#"></a></div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="mainReg" class="main-form__wrap">
+        <form action="">
+          <div class="content__header">Регистрация</div>
+          <div class="col__row clearfix">
+            <div class="col__left">
+              <div class="col__content">
+                <label><span>E-mail:</span>
+                  <input type="text">
+                </label>
+                <label><span>Пароль:</span>
+                  <input type="password">
+                </label>
+                <label><span>Пароль:</span>
+                  <input type="password">
+                </label>
+                <div class="form__footer">
+                  <label id="rememberMe">
+                    <input type="checkbox">
+                    <div class="input-checkbox"></div><span>Я даю согласие на обработку моих персональных данных.</span>
+                  </label>
+                  <button type="submit">Зарегистрироваться</button>
+                  <p class="smalltext">Нажатием кнопки «Зарегистрироваться» я даю свое согласие на обработку персональных данных в соответствии с указанными <a href="">здесь</a> условиями.</p>
+                </div>
+              </div>
+            </div>
+            <div class="sep"><span>или</span></div>
+            <div class="col__right">
+              <p>Зарегистрируйтесь через соцсети</p>
+              <div class="social__buttons"><a href="#"></a><a href="#"></a><a href="#">						</a></div>
+            </div>
+          </div>
+        </form>
+      </div>
       <header class="main__header">
         <div class="header__top clearfix">
           <div class="container">
@@ -47,7 +109,9 @@
                 <li><a href="contacts.html">Контакты</a></li>
               </ul>
             </div>
-            <div class="user__block"><a href="#" class="auth"><span class="ico"> </span>Вход</a><a href="cart.html" class="cart"><span class="ico"> </span>Корзина</a></div>
+            <div id="userBlock" class="user__block"><a href="#auth" class="auth"><span class="ico"> </span>Вход</a><a href="cart.html" class="cart"><span class="ico"> </span>Корзина</a>
+              <div class="user__dropdown"><a href="#mainAuth" class="fancybox enter">Войти на сайт</a><a href="#mainReg" class="fancybox reg">Зарегистрироваться</a></div>
+            </div>
           </div>
         </div>
         <div class="header__center">
@@ -785,6 +849,9 @@
     <script type="text/javascript" src="libs/bxslider/dist/jquery.bxslider.min.js"></script>
     <script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
     <script type="text/javascript" src="libs/formstyler/jquery.formstyler.min.js"></script>
+    <script type="text/javascript" src="libs/inputmask/inputmask.js"></script>
+    <script type="text/javascript" src="libs/inputmask/inputmask.phone.extensions.js"></script>
+    <script type="text/javascript" src="libs/inputmask/jquery.inputmask.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <!--scripts end =======================================================================-->

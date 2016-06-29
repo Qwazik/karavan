@@ -8,6 +8,80 @@
 			li.active: a(href="/") Ноутбуки
 // breadcumbs end ========================================================
 
+#oneclick-form.oneclick-wrap.tovar__popup
+	.tovar-form__header.clearfix
+		span Заказ в 1 клик
+		a.tovar-close(href="#")
+	.tovar-form__content
+		p Оставьте свои контактные данные. Наши менеджеры свяжутся с вами для уточнения деталей заказа.
+		p Ваш регион: г. Москва
+		.input__block
+			label.input__item
+				p Ваше имя<span>*</span>
+				input(type="text" placeholder="Петров Иван Иванович" required)
+			label.input__item.phone
+				p Телефон<span>*</span>
+				input(type="text" required placeholder="+7(___)__-_____")
+			label.input__item
+				p Электронная почта
+				input(type="text")
+	.tovar-form__footer
+		input(type="submit" value="Оформить заказ")
+		p.smalltext Нажатием кнопки «Оформить заказ» я даю свое согласие на обработку персональных данных в соответствии с указанными здесь условиями.
+#addCart-form.addcart-wrap.tovar__popup
+	a.tovar-close(href="#")
+	.addcart__main
+		.addcart__image
+			img(src="img/3pc.jpg", alt="")
+		.addcart-col__right
+			.addcart__title Товар добавлен в корзину
+			.addcart__desc Ноутбук Lenovo Yoga 500 (80R6004EUA) Black
+			.addcart__price 2 627 РУБ
+			.addcart__buttons
+				a(href="oformlenie.html").addcart__oformit Оформить заказ
+				a(href="").addcart__close Продолжить покупки
+	.addcart__carousel-header С этим товаром смотрят
+	.addcart__carousel
+		ul.carousel__nav
+			li.prev: a(href="#") &lt;
+			li.next: a(href="#") &gt;
+		ul#addcartCarousel
+			li.addcart-carousel__item
+				a(href="#")
+					.image
+						img(src="img/1pc.jpg", alt="")
+					.text
+						p.name Ноутбук Lenovo Yoga 500 (80R6004EUA) Black
+						p.price 2 985р.
+			li.addcart-carousel__item
+				a(href="#")
+					.image
+						img(src="img/1pc.jpg", alt="")
+					.text
+						p.name Ноутбук Lenovo Yoga 500 (80R6004EUA) Black
+						p.price 2 985р.
+			li.addcart-carousel__item
+				a(href="#")
+					.image
+						img(src="img/1pc.jpg", alt="")
+					.text
+						p.name Ноутбук Lenovo Yoga 500 (80R6004EUA) Black
+						p.price 2 985р.
+			li.addcart-carousel__item
+				a(href="#")
+						.image
+							img(src="img/1pc.jpg", alt="")
+						.text
+							p.name Ноутбук Lenovo Yoga 500 (80R6004EUA) Black
+							p.price 2 985р.
+			li.addcart-carousel__item
+				a(href="#")
+						.image
+							img(src="img/1pc.jpg", alt="")
+						.text
+							p.name Ноутбук Lenovo Yoga 500 (80R6004EUA) Black
+							p.price 2 985р.
+
 
 // content area ===========================================================
 .main__content
@@ -124,8 +198,8 @@
 									.tip__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, magni.
 								span.delivery__type-price 2000 руб
 					.tpay__buttons.clearfix
-						a(href="#").buy-btn Купить
-						a(href="#").buy-btn.oneclick Купить в один клик
+						a(href="#addCart-form" class="fancybox-tovar").buy-btn Купить
+						a(href="#oneclick-form" class="fancybox-tovar").buy-btn.oneclick Купить в один клик
 					.tpay__guarantee
 						.guarantee__row.clearfix
 							span.guarantee__name Гарантия прозводителя:
