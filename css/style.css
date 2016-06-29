@@ -2677,8 +2677,6 @@ table.orders {
   .tovar-form__content p {
     margin-bottom: 15px;
     font-size: 15px; }
-  .tovar-form__content .phone input {
-    font-weight: 700; }
   .tovar-form__content label {
     margin-top: 15px;
     display: block; }
@@ -2686,20 +2684,12 @@ table.orders {
       font-size: 14px;
       margin-bottom: 0; }
     .tovar-form__content label ::-webkit-input-placeholder {
-      color: #d2d2d2;
-      font-weight: 700;
       letter-spacing: .5px; }
     .tovar-form__content label :-moz-placeholder {
-      color: #d2d2d2;
-      font-weight: 700;
       letter-spacing: .5px; }
     .tovar-form__content label ::-moz-placeholder {
-      color: #d2d2d2;
-      font-weight: 700;
       letter-spacing: .5px; }
     .tovar-form__content label :-ms-input-placeholder {
-      color: #d2d2d2;
-      font-weight: 700;
       letter-spacing: .5px; }
     .tovar-form__content label input {
       font-size: 18px;
@@ -2806,6 +2796,46 @@ table.orders {
 .addcart__price {
   font-size: 14px;
   margin-bottom: 15px; }
+
+.oformlenie__address {
+  display: none; }
+  .oformlenie__address .col {
+    padding-right: 40px;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top; }
+    .oformlenie__address .col input {
+      width: 100%;
+      border: 1px solid #e3e3e3;
+      height: 35px;
+      padding-left: 20px; }
+    .oformlenie__address .col textarea {
+      width: 100%;
+      height: 108px;
+      border: 1px solid #e3e3e3; }
+    .oformlenie__address .col label {
+      display: block;
+      margin-bottom: 15px; }
+      .oformlenie__address .col label span {
+        color: #f00;
+        font-size: 15px; }
+
+.detail__addr {
+  width: 100%; }
+  .detail__addr input {
+    text-align: center;
+    padding: 0 !important; }
+  .detail__addr label {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding-left: 5px; }
+    .detail__addr label p {
+      line-height: 15px;
+      height: 35px; }
+    .detail__addr label:first-child {
+      padding-left: 0px; }
 
 /* ==========================================================================
    Print styles

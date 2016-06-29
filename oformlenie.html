@@ -719,22 +719,77 @@
                 </div>
                 <p class="header__desc">Выберите способ оплаты</p>
                 <div id="payMethod" class="buyer-info__row">
-                  <label>
+                  <label class="nal">
                     <input type="radio" name="pay_method">
                     <div class="ico"></div><span>Наличные</span>
                   </label>
-                  <label class="active">
+                  <label class="active card">
                     <input type="radio" name="pay_method">
                     <div class="ico"></div><span>Банковской картой</span>
                   </label>
-                  <label>
+                  <label class="carddop">
                     <input type="radio" name="pay_method">
                     <div class="ico"></div><span>Банковской картой при получении</span>
                   </label>
-                  <label>
+                  <label class="emony">
                     <input type="radio" name="pay_method">
                     <div class="ico"></div><span>Электронные деньги</span>
                   </label>
+                </div>
+                <div class="oformlenie__address clearfix">
+                  <p class="header__desc">Доставка</p>
+                  <div class="col">
+                    <label class="address-input__item">
+                      <p>
+                         
+                        Населенный пункт <span>*</span>
+                      </p>
+                      <input type="text" require placeholder="г. Москва">
+                    </label>
+                    <label class="address-input__item">
+                      <p>
+                         
+                        Улица<span>*</span>
+                      </p>
+                      <input type="text" require>
+                    </label>
+                    <div class="detail__addr">
+                      <label class="address-input__item">
+                        <p>
+                           
+                          Дом / <br/> корпус <span>*</span>
+                        </p>
+                        <input type="text" require>
+                      </label>
+                      <label class="address-input__item">
+                        <p>
+                           
+                          Квартира / <br/> офис
+                        </p>
+                        <input type="text">
+                      </label>
+                      <label class="address-input__item">
+                        <p>
+                           
+                          Этаж
+                        </p>
+                        <input type="text">
+                      </label>
+                      <label class="address-input__item">
+                        <p>
+                           
+                          Подъезд
+                        </p>
+                        <input type="text">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <label>
+                      <p>Комментарий к заказу</p>
+                      <textarea></textarea>
+                    </label>
+                  </div>
                 </div>
                 <p class="header__desc">Выберите удобный вам пункт выдачи товаров</p>
                 <div id="pointTabs" class="point-tabs">

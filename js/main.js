@@ -132,8 +132,14 @@ var openSubmenu = function(id){
 }
 
 $('#payMethod label').on('click', function(e){
+	e.preventDefault();
 	$(this).addClass('active');
 	$(this).siblings().removeClass('active');
+	if ($('.nal').is('.active') || $('.carddop').is('.active')) {
+		$('.oformlenie__address').fadeIn(300);
+	}else{
+		$('.oformlenie__address').hide();
+	}
 })
 
 $('#userBlock .auth').on('click', function(){

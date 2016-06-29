@@ -3313,7 +3313,7 @@ table.orders{
         font-size: 15px;
     }
             .phone input{
-            font-weight: 700;
+            
         }
     label {
         margin-top: 15px;
@@ -3324,14 +3324,12 @@ table.orders{
             margin-bottom: 0;
         }
         @include placeholder {
-                color: #d2d2d2;
-                font-weight: 700;
+                
+                
                 letter-spacing: .5px;            
         }
 
         input{
-
-
                 font-size: 18px;
                 width: 100%;
                 padding: 20px 16px;
@@ -3448,6 +3446,60 @@ table.orders{
 .addcart__price{
     font-size: 14px;
     margin-bottom: 15px;
+}
+
+.oformlenie__address{
+    display: none;
+    .col{
+        padding-right: 40px;
+        display: inline-block;
+        width: 40%;
+        vertical-align: top;
+
+        input{
+            width: 100%;
+            border: 1px solid #e3e3e3;
+            height: 35px;
+            padding-left: 20px;
+        }
+        textarea{
+            width: 100%;
+            height: 108px;
+            border: 1px solid #e3e3e3;
+        }
+        label{
+            display: block;
+            margin-bottom: 15px;
+            p{
+                // font-weight: 700;
+            }
+            span{
+                color: #f00;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.detail__addr{
+    width: 100%;
+    input{
+        text-align: center;
+        padding: 0 !important;
+    }
+    label{
+        box-sizing: border-box;
+        width: 25%;
+        float: left;
+        padding-left: 5px;
+        p{
+            line-height: 15px;
+            height: 35px;
+        }
+        &:first-child{
+            padding-left: 0px;
+        }
+    }
 }
 /* ==========================================================================
    Print styles

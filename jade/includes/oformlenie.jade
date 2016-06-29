@@ -23,22 +23,57 @@
 							input(type="text" placeholder="Электронная почта*")
 						p.header__desc Выберите способ оплаты
 						.buyer-info__row#payMethod
-							label
+							label.nal
 								input(type="radio" name="pay_method")
 								.ico
 								span Наличные
-							label.active
+							label.active.card
 								input(type="radio" name="pay_method")
 								.ico
 								span Банковской картой
-							label
+							label.carddop
 								input(type="radio" name="pay_method")
 								.ico
 								span Банковской картой при получении
-							label
+							label.emony
 								input(type="radio" name="pay_method")
 								.ico
 								span Электронные деньги
+						.oformlenie__address.clearfix
+							p.header__desc Доставка
+							.col
+								label.address-input__item
+									p 
+										| Населенный пункт 
+										span *
+									input(type="text" require placeholder="г. Москва")
+								label.address-input__item
+									p 
+										| Улица
+										span *
+									input(type="text" require)
+								.detail__addr
+									label.address-input__item
+										p 
+											| Дом / <br/> корпус 
+											span *
+										input(type="text" require)
+									label.address-input__item
+										p 
+											| Квартира / <br/> офис
+										input(type="text")
+									label.address-input__item
+										p 
+											| Этаж
+										input(type="text")
+									label.address-input__item
+										p 
+											| Подъезд
+										input(type="text")
+							.col
+								label
+									p Комментарий к заказу
+									textarea
 						p.header__desc Выберите удобный вам пункт выдачи товаров
 						.point-tabs#pointTabs
 							ul.tabs-nav
