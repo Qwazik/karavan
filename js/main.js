@@ -1,16 +1,4 @@
-//ajax message
-	    $('form').submit(function(){
-	    var dataForm = $(this).serialize();
-	    $.ajax({
-	        method : 'POST',
-	        url: '../mail.php',
-	        data: dataForm
-	    })
-	    .success(function() {
-	        alert('Спасибо за сообщение! Мы с вами обязательно свяжемся.')
-	    });
-	    return false;
-	})
+
 
 //slide anchor
 jQuery(document).ready(function() {

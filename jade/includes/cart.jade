@@ -98,49 +98,50 @@
 						button.plus +
 					a.cart__delete(href="#") Удалить															
 		.content__left.cart__right
-			h2 Оформить заказ
-			p.header__desc Способ получения заказа
-			.checkbox__group
-				.checkbox__row
-					label.sum__checkbox
-						input(type="checkbox", name="")
-						span Забрать самому
-					span.tip
-						.tip__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolorum.
-					span.delivery__type-price 0 руб
-				.checkbox__row
-					label.sum__checkbox
-						input(type="checkbox", name="")
-						span Курьерская доставка
-					span.tip
-						.tip__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, culpa?
-					span.delivery__type-price 500 руб
-				.checkbox__row
-					label.sum__checkbox
-						input(type="checkbox", name="")
-						span Срочная доставка (VIP)
-					span.tip
-						.tip__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, magni.
-					span.delivery__type-price 2000 руб
-			.final__sum
-				p.header__desc Итого:
-				.sum__block
-					.sum__row.clearfix
-						span.sum__name Стоимость:
-						span.sum__val
-							span.num 0
-							| руб.
-					.sum__row.clearfix
-						span.sum__name Доставка до точки выдачи:
-						span.sum__val
-							span.num 0
-							| руб.	
-					.sum__row.end.clearfix
-						span.sum__name Всего к оплате:
-						span.sum__val
-							span.num 0
-							| руб.			
-			input(type="submit" value="Оформить заказ").buy-btn
+			form(action="oformlenie.html")
+				h2 Оформить заказ
+				p.header__desc Способ получения заказа
+					.checkbox__group
+						.checkbox__row
+							label.sum__checkbox
+								input(type="checkbox", name="")
+								span Забрать самому
+							span.tip
+								.tip__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolorum.
+							span.delivery__type-price 0 руб
+						.checkbox__row
+							label.sum__checkbox
+								input(type="checkbox", name="")
+								span Курьерская доставка
+							span.tip
+								.tip__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, culpa?
+							span.delivery__type-price 500 руб
+						.checkbox__row
+							label.sum__checkbox
+								input(type="checkbox", name="")
+								span Срочная доставка (VIP)
+							span.tip
+								.tip__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, magni.
+							span.delivery__type-price 2000 руб
+				.final__sum
+					p.header__desc Итого:
+					.sum__block
+						.sum__row.clearfix
+							span.sum__name Стоимость:
+							span.sum__val
+								span.num 0
+								| руб.
+						.sum__row.clearfix
+							span.sum__name Доставка до точки выдачи:
+							span.sum__val
+								span.num 0
+								| руб.	
+						.sum__row.end.clearfix
+							span.sum__name Всего к оплате:
+							span.sum__val
+								span.num 0
+								| руб.			
+				input(type="submit" value="Оформить заказ").buy-btn
 	// content area end ========================================================
 	.container
 		.catalog__recently
