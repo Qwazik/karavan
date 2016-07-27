@@ -147,6 +147,13 @@ $('#userBlock').on('mouseleave', function(){
 	});
 })
 
+/*-------------------------------------------------*/
+/*	compare-scroll-bar
+/*-------------------------------------------------*/
+
+
+
+
 // $('#rememberMe').click(function(e){
 // 	// e.preventDefault();
 // 	$(this).find('.input-checkbox').toggleClass('active');

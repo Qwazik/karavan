@@ -61,7 +61,7 @@ $(document).ready(function(){
     $('.fancybox-tovar').fancybox({
         closeBtn: false,
     }); //fancyboxinit
-    $('.point-list__item').qToggle();
+    $('.point-list__item, .compare-sort__item').qToggle();
     $('#mainSlider').bxSlider({
         controls: false,
         auto: true,
@@ -199,5 +199,101 @@ function checkCategoryActive(num){
 
     $('#filter input[type="checkbox"], .cart__right input, .tovar__pay input').styler();
   });
+
+
+
+//scroll
+var compareElements = $('.compare-area .compare-item').length,
+    widthCompareElement = $('.compare-area .compare-item').outerWidth(),
+    hiddenElements = compareElements - 3;
+    hiddenRange = hiddenElements * widthCompareElement;
+    step = hiddenRange / 100;
+console.log(compareElements, widthCompareElement, hiddenElements, hiddenRange, step);
+compareAreaWidth();
+
+$('.compare-item__close').click(function(){
+
+    if($('.compare-area .compare-item').length >= 4){
+        $(this).closest('.compare-item').each(function(){
+            $(this).fadeOut(500, function(){
+                if((parseInt($('.compare-area').css('margin-left'))) < -(widthCompareElement - 1)){
+
+                    var needML = (parseInt($('.compare-area').css('margin-left'))) + widthCompareElement;
+                    $('.compare-area').animate({
+                        'margin-left': needML
+                    })
+                }
+            
+            $(this).remove();
+            if($('.compare-item').length == 3){
+        $('#scrollbar-top, #scrollbar-bot').find('.ui-slider-handle').animate({
+            left:0,
+            width: '100%'
+        }, 700, function(){
+            $('.compare-item__close').fadeOut(700);
+        })
+        
+    }
+        });
+    });
+
+}
+    var compareElements = $('.compare-area .compare-item').length - 1,
+        widthCompareElement = $('.compare-area .compare-item').outerWidth(),
+        hiddenElements = compareElements - 3;
+        hiddenRange = hiddenElements * widthCompareElement;
+        step = hiddenRange / 100;
+        console.log(compareElements, widthCompareElement, hiddenElements, hiddenRange, step);
+        if(step <= 0){
+            step = 0;
+        }
+        return false;
+})
+
+function compareAreaWidth(){
+    $('.compare-area').width(compareElements * widthCompareElement);
+}
+
+
+if(step <= 0){{
+    step = 0;
+}}
+
+$('.compare-scroll-top').slider({
+  min: 0,
+  max: 100,
+  slide: function(event, ui){
+    scrolling(ui.value)
+    $('.compare-scroll-bot').slider('value', ui.value);
+  },
+  stop: function(event, ui){
+    scrolling(ui.value);
+    equalScroll(ui.value);
+  }
+});
+
+$('.compare-scroll-bot').slider({
+  min: 0,
+  max: 100,
+  slide: function(event, ui){
+    scrolling(ui.value);
+    $('.compare-scroll-top').slider('value', ui.value);
+  },
+  stop: function(event, ui){
+    scrolling(ui.value);
+    equalScroll(ui.value);
+  }
+});
+
+function scrolling(e){
+    $('.compare-area').css('margin-left', -(e * step));
+
+}
+
+function equalScroll(e){
+    var value = e;
+    console.log(value);
+    $('.compare-scroll-bot, .compare-scroll-top').slider('value', value);
+}
 
   
